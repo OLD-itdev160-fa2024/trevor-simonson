@@ -1,0 +1,38 @@
+html{
+    padding: 2rem;
+}
+
+body{
+    font-family: 'Open Sans', Courier, monospace;
+    color: rgba(33, 44, 54, 0.781);
+    background-color: rgba(150, 153, 165, 0.247);
+}
+img{
+    width: 600px;
+    text-align: left;
+}
+
+h1{
+    background-color: #03974152;
+    text-align: center;
+}
+
+figcaption span {
+    font-size: .85em;
+}
+
+p#product-description{
+    width: 50%;
+}
+
+div.review{
+    border: 1px solid black;
+    border-radius: 30px;
+    width:50%;
+    color: white;
+    background-color: #666;
+    margin: 1rem;
+    padding: .8rem;
+}
+
+
