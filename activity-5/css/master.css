@@ -1,39 +1,15 @@
-html{
-    font-family: sans-serif;
-    width: 40%;
-    margin: auto;
-}
-
-h1{
+body{
+    font-family: sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold';
+    margin: auto 30px;
 
 }
 
-img{
-
+#credits{
+    font-style: italic;
+    font-size: .75rem;
+    margin-bottom: 20px;
 }
 
-p{
-
-}
-
-#contents{
-    border: 1px solid gray;
-    background-color: rgb(217, 223, 224);
-    margin: 3rem;
-    padding: 0 2rem 1rem 2rem;
-}
-
-#contents h2{
-    text-align: center;
-    margin: 2rem;
-}
-
-#contents ul{
-    padding: 0;
-    margin: 1rem;
-}
-
-#contents li{
-    padding: 0.5rem 0;
-    font-size: 1.2rem;
+#header-image{
+    width: 100%;
 }
