@@ -7,7 +7,8 @@ var data = [
         downloads: 6788208,
         stars: 169,
         prices: 5.55,
-        selector: 'p1'
+        selector: 'p1',
+        image: '/activity-5/images/ext1.gif'
     },
     {
         name: 'CSS Peek',
@@ -17,7 +18,8 @@ var data = [
         downloads: 4909667,
         stars: 86,
         prices: 0.99,
-        selector: 'p2'
+        selector: 'p2',
+        image: 'https://cdn.shopify.com/s/files/1/0533/2089/files/visual-studio-code-extensions-CSS-peek.gif?v=1593002619'
     }
 
 ];
@@ -30,6 +32,7 @@ function Package(data){
     this.downloads = data.downloads;
     this.stars = data.stars;
     this.selector = data.selector;
+    this.image = data.image;
 
     this.getFormattedDownloads = function() {
         return this.downloads.toLocaleString();
@@ -58,12 +61,23 @@ var writePackage = function(package){
     var author = document.getElementById(selector + '-author');
     var downloads = document.getElementById(selector + '-downloads');
     var stars = document.getElementById(selector + '-stars');
+    var link = document.getElementById(selector + '-url');
+    const image = document.getElementById(selector + '-image');
 
-    name.textContent = package.name;
+    name.textContent = selector[1] + '. ' + package.name;
     description.textContent = package.description;
+
     author.textContent = package.author;
+    author.style.fontStyle = "italic";
+
     downloads.textContent = package.getFormattedDownloads();
-    stars.textContent = package.getFormattedStars();
+
+    stars.textContent = `(${package.getFormattedStars()})`;
+
+    image.src = package.image;
+
+    link.textContent = `View ${package.name}`;
+    link.href = package.url;
 }
 
 

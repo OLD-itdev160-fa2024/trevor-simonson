@@ -1,15 +1,46 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold';
-    margin: auto 30px;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 0;
 
 }
 
+img{
+    width: 100%;
+}
 #credits{
     font-style: italic;
     font-size: .75rem;
     margin-bottom: 20px;
 }
 
-#header-image{
-    width: 100%;
+
+.package-container{
+    width: 50%;
+    margin: 4rem auto;
+
+}
+
+.package-container img{
+    margin-top: 1rem;
+}
+
+.button{
+    display: block;
+    background-color: seagreen;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    max-width: 200px;
+    margin: 1rem auto;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
 }
