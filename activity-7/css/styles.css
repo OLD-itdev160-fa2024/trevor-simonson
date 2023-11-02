@@ -1,0 +1,32 @@
+body{
+    font-family: 'Some Mono', 'Courier New', Courier, monospace;
+    max-width: 300px;
+    margin: auto ;
+    color: #555;
+
+}
+header{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+ul{
+    border: solid 1px #555;
+    margin: 0;
+
+}
+
+li{
+    padding: 10px;
+}
+
+#todo-list-container{
+    margin-top: 20px;
+}
+
+#completed-list{
+    list-style: none;
+}
+
+#completed-list li{
+    text-decoration: line-through;
+}
