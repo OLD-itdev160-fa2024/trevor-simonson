@@ -24,27 +24,34 @@ function saveContent(){
     var title = get('edit-title-text');
     var text = get('edit-content-text');
     var content = get('display-content');
+    
 
     var newTitle = document.createElement('h2')
     var newContent = document.createElement('p')
 
     newTitle.appendChild(document.createTextNode(title.value));
     newContent.appendChild(document.createTextNode(text.value));
-
-    content.appendChild(newTitle);
-    content.appendChild(newContent);
+    var post = document.createElement('div')
+    post.classList.add('post');
+    
+    post.appendChild(newTitle);
+    post.appendChild(newContent);
+    content.appendChild(post);
+    //content.appendChild(newTitle);
+    //content.appendChild(newContent);
 
     closeModal();
 }
 
-// Event Listeners
+// Event Listeners - similar to init
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function(){ // event is 'load'
     var newButton = get('new-button');
     var saveButton = get('save-button');
     var cancelButton = get('cancel-button')
 
     newButton.addEventListener('click', openModal);
+    // or newButton.onClick = openModal;
     saveButton.addEventListener('click', saveContent);
     cancelButton.addEventListener('click', closeModal)
 });
